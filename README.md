@@ -52,6 +52,9 @@ docs
 ├── articles
     ├── `art1`
     │   ├── summary: art1論文の要約
+    │   │   ├── `head1`: 要約の見出し1
+    │   │   ├── `head2`: 要約の見出し2
+    │   │   └── `head3`: 要約の見出し3
     │   └── paper: art1論文の全文
     ├── `art2`
     │   ├── summary
