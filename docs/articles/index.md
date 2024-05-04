@@ -1,5 +1,9 @@
+---
+layout: doc
+---
+
 <script setup>
-import ArticlesList from './ArticlesList.vue'
+import ArticlesList from '../src/components/ArticlesList.vue'
 </script>
 
 <ArticlesList/>
