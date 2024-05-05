@@ -21,4 +21,7 @@ export default defineConfig({
             { icon: "github", link: "https://github.com/petaxa/viticle" },
         ],
     },
+    markdown: {
+        math: true,
+    },
 });
