@@ -13,29 +13,50 @@ export const sidebarFactory = () => {
                 `${name}がarticlesSummaryHeadingsInfosに登録されていません。`
             );
         }
-        sidebar[`/articles/${name}/`] = {
-            base: `/articles/${name}/`,
-            items: [
-                {
-                    text: "論文要約",
-                    base: `/articles/${name}/summary/`,
-                    items: articlesSummaryHeadingsInfos[name].items,
-                },
-                {
-                    text: "論文全文",
-                    link: "paper",
-                },
-            ],
-        };
+
+        const base = `/articles/${name}/`;
+        const items: DefaultTheme.SidebarMulti["path"] = [
+            {
+                text: "論文全文",
+                link: "paper",
+            },
+        ];
+        if (
+            articlesSummaryHeadingsInfos[name].items &&
+            articlesSummaryHeadingsInfos[name].items[0]
+        ) {
+            items.push({
+                text: "論文要約",
+                base: `/articles/${name}/summary/`,
+                items: articlesSummaryHeadingsInfos[name].items,
+            });
+        }
+
+        // sidebarに追加
+        sidebar[`/articles/${name}/`] = { base, items };
     });
 
-    // ガイドを追加
+    // ガイドのサイドバーを追加
     sidebar["/guide/"] = {
         base: "/guide/",
         items: [
             {
-                text: "はじめに",
+                text: "イントロダクション",
                 link: "introduction",
+            },
+            {
+                text: "Viticleをはじめる",
+                link: "getting-started",
+            },
+            {
+                text: "論文を追加する",
+                base: "/guide/add-articles/",
+                items: [
+                    {
+                        text: "新たな論文の追加方法",
+                        link: "how-to-add-articles",
+                    },
+                ],
             },
         ],
     };

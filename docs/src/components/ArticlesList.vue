@@ -4,9 +4,10 @@ import ArticleItem from "./ArticleItem.vue"
 
 const articles = Object.keys(articlesSummaryHeadingsInfos).map(key => {
     const info = articlesSummaryHeadingsInfos[key]
+    const topLink = info.items && info.items[0] ? `/summary/${info.items[0].link}` : "paper"
     return {
         title: info.title,
-        link: `/articles/${key}/summary/${info.items[0].link}`
+        link: `/articles/${key}/${topLink}`
     }
 })
 </script>
