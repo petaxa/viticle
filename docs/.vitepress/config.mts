@@ -9,7 +9,10 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: "論文一覧", link: "/articles/index.md" },
-            { text: "ガイド", link: "/guide/introduction.md" },
+            {
+                text: "ガイド",
+                link: "https://petaxa.github.io/guide/introduction.html",
+            },
         ],
 
         sidebar: sidebarFactory(),

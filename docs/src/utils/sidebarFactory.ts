@@ -36,44 +36,5 @@ export const sidebarFactory = () => {
         sidebar[`/articles/${name}/`] = { base, items };
     });
 
-    // ガイドのサイドバーを追加
-    sidebar["/guide/"] = {
-        base: "/guide/",
-        items: [
-            {
-                text: "イントロダクション",
-                link: "introduction",
-            },
-            {
-                text: "Viticleをはじめる",
-                link: "getting-started",
-            },
-            {
-                text: "論文を追加する",
-                base: "/guide/add-articles/",
-                items: [
-                    {
-                        text: "新たな論文の追加方法",
-                        link: "how-to-add-articles",
-                    },
-                    {
-                        text: "Markdown記法",
-                        link: "about-markdown",
-                    },
-                ],
-            },
-            {
-                text: "others",
-                base: "/guide/others/",
-                items: [
-                    {
-                        text: "Node.jsのインストール",
-                        link: "install-nodejs",
-                    },
-                ],
-            },
-        ],
-    };
-
     return sidebar;
 };

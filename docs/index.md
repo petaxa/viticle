@@ -11,5 +11,5 @@ hero:
       link: /articles/index.md
     - theme: alt
       text: Viticleの使い方
-      link: /guide/introduction.md
+      link: https://petaxa.github.io/guide/introduction.html
 ---
