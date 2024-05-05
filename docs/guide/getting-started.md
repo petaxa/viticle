@@ -21,14 +21,14 @@ node -v
 
 バージョンが表示されない、または表示されたバージョンが18以下の場合は[Nodeのインストール](./_dev/memo.md)をご覧ください。
 
-### `TypeScript`, `MarkDown`をサポートしているテキストエディタ <Badge type="tip" text="推奨" />
+### `TypeScript`, `Markdown`をサポートしているテキストエディタ <Badge type="tip" text="推奨" />
 
 [VSCode](https://code.visualstudio.com/)を推奨します。
 
-論文を追加する際に設定ファイルに追記を行います。ほとんどの場合、論文をMarkDown形式で再構成する必要があります。
+論文を追加する際に設定ファイルに追記を行います。ほとんどの場合、論文をMarkdown形式で再構成する必要があります。
 
 :::tip
-TypeScript, MarkDownのフォーマッタをVSCodeの拡張機能で追加することをおすすめします。
+TypeScript, MarkdownのフォーマッタをVSCodeの拡張機能で追加することをおすすめします。
 :::
 
 ## Viticleのダウンロード
