@@ -4,6 +4,7 @@ import { sidebarFactory } from "../src/utils/sidebarFactory";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "Viticle",
+    titleTemplate: ":title | Viticle",
     description: "A Quick and Beautiful Article Viewer",
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
