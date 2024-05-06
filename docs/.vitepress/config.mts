@@ -9,7 +9,7 @@ export default defineConfig({
     head: [
         [
             "link",
-            { rel: "icon", type: "image/svg+xml", href: "art/viticle.svg" },
+            { rel: "icon", type: "image/svg+xml", href: "/viticle.svg" },
         ],
         // ['link', { rel: 'icon', type: 'image/png', href: '/vitepress-logo-mini.png' }],
     ],
