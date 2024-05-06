@@ -15,7 +15,7 @@ export default defineConfig({
     ],
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        logo: { src: "art/viticle.svg", width: 24, height: 24 },
+        logo: { src: "/viticle.svg", width: 24, height: 24 },
         nav: [
             { text: "論文一覧", link: "/articles/index.md" },
             {
